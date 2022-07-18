@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% if isActive %}
+    <div class="container" style="text-align:center">
+            {% include 'navbar.html' %}
+            <h1>This is our official website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium aperiam modi tempora, molestiae saepe possimus sed hic error voluptatibus sequi adipisci repellat nemo vel blanditiis sunt incidunt facere voluptatem ut magni nisi a? Architecto maiores consequuntur voluptate asperiores assumenda nulla, ratione reprehenderit, et doloribus, unde incidunt? Omnis, iure quas!</p>
+            <button>Contact US</button>
+            <!-- accessing dynamic value-->
+            <h1>Todays date is {{date}}</h1>
+            <hr>
+            <h2>My name is{{name}}</h2>
+            <h3>My Programs:{{list_of_programs}}</h3>
+            <hr>
+            <h2>Student name:{{student.student_name}}</h2>
+            <h2>Student college:{{student.student_college}}</h2>
+            <h2>Student city:{{student.stud_city}}</h2>
+        {%endif %}
+    </div>
+</body>
+</html>
